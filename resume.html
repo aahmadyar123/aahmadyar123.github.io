@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Resume</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <h1 class="logo">
-        <a href="index.html">personal website</a>
+        <a href="index.html">Personal Website</a>
       </h1>
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <main>
       <h1 class="resume">Resume</h1>
-      <a href="resume.pdf" download>Download Resume</a>
-      <div class="resume">
+      <a href="resume.pdf" class="download-btn" download>Download Resume</a>
+      <div class="resume-content">
+        <!-- Education Section -->
         <section class="section">
           <h2>Education</h2>
           <div class="entry">
@@ -30,9 +32,9 @@
               California Polytechnic State University, San Luis Obispo |
               Expected Graduation Date June 2024
             </p>
-            <p class="entry-description"></p>
           </div>
         </section>
+        <!-- Coursework Section -->
         <section class="section">
           <h2>Coursework</h2>
           <ul class="course-list">
@@ -48,6 +50,7 @@
             <li>Computer Design and Assembly Language Programming</li>
           </ul>
         </section>
+        <!-- Skills Section -->
         <section class="section">
           <h2>Skills</h2>
           <ul class="skill-list">
@@ -60,15 +63,15 @@
             <li>Git/Github</li>
           </ul>
         </section>
-        <section>
+        <!-- Projects Section -->
+        <section class="section">
           <h2>Projects</h2>
           <div class="entry">
-            <h3 class="entry-title">Ai Vision Engine</h3>
+            <h3 class="entry-title">AI Vision Engine</h3>
             <p class="entry-info">
               Led a team of five engineers to develop an AI imaging engine
               proficient in sample tube identification.
             </p>
-            <p class="entry-description"></p>
           </div>
           <div class="entry">
             <h3 class="entry-title">CookMyFridge</h3>
@@ -78,11 +81,12 @@
               API.
             </p>
             <p class="entry-description">
-              -Implemnted JWT based user authentication and authorization for
+              - Implemented JWT based user authentication and authorization for
               secure website access.
             </p>
           </div>
         </section>
+        <!-- Experience Section -->
         <section class="section">
           <h2>Experience</h2>
           <div class="entry">
